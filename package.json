@@ -1,6 +1,6 @@
 {
   "name": "svelte-avatar",
-  "version": "1.0.0",
+  "version": "1.0.0-RC-1",
   "description": "An avatar component for Svelte",
   "repository": "git@github.com:wdtamagi/svelte-avatar.git",
   "author": "Willian Dias Tamagi",
@@ -10,9 +10,10 @@
   "module": "dist/index.mjs",
   "files": [
     "dist",
-    "src/lib/index.svelte"
+    "src/lib/Avatar.svelte",
+    "README.md"
   ],
-  "svelte": "src/lib/index.svelte",
+  "svelte": "src/lib/Avatar.svelte",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
