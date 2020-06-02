@@ -5,10 +5,10 @@
   export let name = 'Avatar';
   export let initials;
   export let src;
-  export let size = '50px';
-  export let borderRadius = '100%';
   export let bgColor = 'lightGray';
   export let textColor = 'white';
+  export let size = '50px';
+  export let borderRadius = '50%';
 
   const abbr = initials || i(name);
   const abbrLenght = abbr.length;
