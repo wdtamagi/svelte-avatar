@@ -1,5 +1,5 @@
 <script>
-  import Avatar from "../lib/Avatar.svelte";
+  import Avatar from '../lib/Avatar.svelte';
 </script>
 
 <style>
@@ -14,5 +14,5 @@
 </style>
 
 <main>
-  <Avatar name="Elias Silva" />
+  <Avatar initials="Zz" />
 </main>
