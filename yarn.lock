@@ -177,6 +177,11 @@ has-flag@^4.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
+initials@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/initials/-/initials-3.1.0.tgz#ea8b93a4e2b67944db894e83dad383890da1924b"
+  integrity sha512-kWcyG5epBl4Wxvz49eW8dZAYgexQKI9qu2WP0XogWCu9nzigV7DEKhrkrKzGjYoynguxpEyo22ZCBB+NgHWiGQ==
+
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
