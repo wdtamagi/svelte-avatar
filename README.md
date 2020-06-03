@@ -25,14 +25,21 @@ or
 
 ## Usage
 
+with image:
+
 ```js
 <script>
   import Avatar from "svelte-avatar";
 </script>
 
-<style>
+<Avatar name="John Walker" src="https://avatars0.githubusercontent.com/u/6810985?s=460&u=a2a24f33ad8d17377cef8163f596a7fbd1501cd4&v=4" />
 
-</style>
+with name:
+
+```js
+<script>
+  import Avatar from "svelte-avatar";
+</script>
 
 <Avatar name="John Walker" />
 ```
