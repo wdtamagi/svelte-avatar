@@ -11,7 +11,7 @@
   export let borderRadius = '50%';
 
   const abbr = initials || i(name);
-  const abbrLenght = abbr.length;
+  const abbrLength = abbr.length;
 </script>
 
 <style>
