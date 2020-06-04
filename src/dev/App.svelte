@@ -14,5 +14,5 @@
 </style>
 
 <main>
-  <Avatar initials="Zz" />
+  <Avatar />
 </main>
