@@ -39,7 +39,7 @@ export default [
   },
   {
     input: 'src/lib/Avatar.svelte',
-    output: { file: pkg.main, format: 'umd', name: 'ErrorScreen' },
+    output: { file: pkg.main, format: 'umd', name: 'Avatar' },
     plugins: [svelte(), resolve(), commonjs()],
   },
   {
