@@ -25,6 +25,8 @@ or
 
 ## Usage
 
+![example](./examples/example.png)
+
 with image:
 
 ```js
