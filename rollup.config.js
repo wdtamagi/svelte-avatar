@@ -46,7 +46,8 @@ export default [
     input: 'src/Avatar.svelte',
     output: { file: pkg.module, format: 'es' },
     external: ['svelte/internal'],
-    plugins: [svelte(), commonjs()],
+    plugins: [svelte(), commonjs(), resolve()],
+    external: ['initials'],
   },
 ];
 
