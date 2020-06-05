@@ -1,5 +1,6 @@
 {
   "name": "svelte-avatar",
+  "homepage": "https://svelte-avatar.netlify.app/",
   "version": "0.1.2",
   "description": "An avatar component for Svelte",
   "repository": "git@github.com:wdtamagi/svelte-avatar.git",
