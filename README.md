@@ -25,7 +25,7 @@ or
 
 ## Usage
 
-![example](./examples/example.png)
+![example](./assets/example.png)
 
 with image:
 
