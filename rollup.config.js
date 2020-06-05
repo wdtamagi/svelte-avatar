@@ -9,7 +9,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 export default [
   {
-    input: 'src/dev/main.js',
+    input: 'docs/main.js',
     output: {
       sourcemap: true,
       format: 'iife',
@@ -38,12 +38,12 @@ export default [
     },
   },
   {
-    input: 'src/lib/Avatar.svelte',
+    input: 'src/Avatar.svelte',
     output: { file: pkg.main, format: 'umd', name: 'Avatar' },
     plugins: [svelte(), resolve(), commonjs()],
   },
   {
-    input: 'src/lib/Avatar.svelte',
+    input: 'src/Avatar.svelte',
     output: { file: pkg.module, format: 'es' },
     external: ['svelte/internal'],
     plugins: [svelte(), commonjs()],
