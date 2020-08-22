@@ -14,10 +14,10 @@
   "module": "dist/index.mjs",
   "files": [
     "dist",
-    "src/lib/Avatar.svelte",
+    "src/Avatar.svelte",
     "README.md"
   ],
-  "svelte": "src/lib/Avatar.svelte",
+  "svelte": "src/Avatar.svelte",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
