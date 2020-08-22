@@ -4,7 +4,7 @@
   "keywords": [
     "svelte"
   ],
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "An avatar component for Svelte",
   "repository": "git@github.com:wdtamagi/svelte-avatar.git",
   "author": "Willian Dias Tamagi",
