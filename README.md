@@ -94,6 +94,16 @@ with name:
     <td> 50% </td>
     <td> String </td>
     <td>The border-radius css property of avatar.</td></tr>
+  <tr><td>square</td>
+    <td> N </td>
+    <td> false </td>
+    <td> Boolean </td>
+    <td>If true, Avatar will be a Square</td></tr>
+  <tr><td>colored</td>
+    <td> N </td>
+    <td> false </td>
+    <td> Boolean </td>
+    <td>If true, Avatar background will be colored randomly</td></tr>
 </tbody>
 </table>
 

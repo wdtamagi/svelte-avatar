@@ -8,6 +8,8 @@
   import CustomSize from './examples/CustomSize.svelte';
   import CustomColor from './examples/CustomColor.svelte';
   import CustomRadius from './examples/CustomRadius.svelte';
+  import Square from './examples/Square.svelte';
+  import Colored from './examples/Colored.svelte';
 </script>
 
 <style>
@@ -37,5 +39,7 @@
     <CustomSize />
     <CustomColor />
     <CustomRadius />
+    <Square />
+    <Colored />
   </div>
 </main>
