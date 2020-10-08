@@ -1,14 +1,19 @@
 <script>
   import i from 'initials';
+  import {getRandomColor} from './utils.js';
 
   export let style = '';
   export let name = 'Avatar';
   export let initials;
   export let src;
-  export let bgColor = 'lightGray';
+  export let bgColor = 'lightGrey';
   export let textColor = 'white';
   export let size = '50px';
   export let borderRadius = '50%';
+  export let square = false;
+  export let randomBgColor = false;
+
+  const background = randomBgColor ? getRandomColor() : bgColor;
 
   const abbr = initials || i(name);
   const abbrLength = abbr.length;
@@ -69,7 +74,7 @@
 <div
   aria-label={name}
   class="wrapper"
-  style="{style}--borderRadius:{borderRadius}; --size:{size}; --bgColor:{bgColor};
+  style="{style}--borderRadius:{square ? 0 : borderRadius}; --size:{size}; --bgColor:{background};
   --src:{src}; --textColor:{textColor}; --abbrLength:{abbrLength}">
   {#if src && !imageFail}
     <div class={imageLoading ? 'imageLoading' : ''}>
