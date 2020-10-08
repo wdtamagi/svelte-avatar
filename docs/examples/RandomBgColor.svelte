@@ -4,7 +4,7 @@
 
   import Avatar from '../../src/Avatar.svelte';
 
-  $: code = `<Avatar colored name="John Walker" />`;
+  $: code = `<Avatar randomBgColor name="John Walker" />`;
 </script>
 
 <style>
@@ -14,7 +14,7 @@
 </style>
 
 <div>
-  <h2>Colored</h2>
-  <Avatar colored name="John Walker" />
+  <h2>Random Background Color</h2>
+  <Avatar randomBgColor name="John Walker" />
   <Highlight language={javascript} {code} />
 </div>

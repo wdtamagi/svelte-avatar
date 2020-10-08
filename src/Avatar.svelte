@@ -6,14 +6,14 @@
   export let name = 'Avatar';
   export let initials;
   export let src;
-  export let bgColor;
+  export let bgColor = 'lightGrey';
   export let textColor = 'white';
   export let size = '50px';
   export let borderRadius = '50%';
   export let square = false;
-  export let colored = false;
+  export let randomBgColor = false;
 
-  const background = bgColor ? bgColor : colored ? getRandomColor() : 'lightGrey';
+  const background = randomBgColor ? getRandomColor() : bgColor;
 
   const abbr = initials || i(name);
   const abbrLength = abbr.length;

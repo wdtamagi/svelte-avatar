@@ -99,7 +99,7 @@ with name:
     <td> false </td>
     <td> Boolean </td>
     <td>If true, Avatar will be a Square</td></tr>
-  <tr><td>colored</td>
+  <tr><td>randomBgColor</td>
     <td> N </td>
     <td> false </td>
     <td> Boolean </td>

@@ -9,7 +9,7 @@
   import CustomColor from './examples/CustomColor.svelte';
   import CustomRadius from './examples/CustomRadius.svelte';
   import Square from './examples/Square.svelte';
-  import Colored from './examples/Colored.svelte';
+  import RandomBgColor from './examples/RandomBgColor.svelte';
 </script>
 
 <style>
@@ -40,6 +40,6 @@
     <CustomColor />
     <CustomRadius />
     <Square />
-    <Colored />
+    <RandomBgColor />
   </div>
 </main>
