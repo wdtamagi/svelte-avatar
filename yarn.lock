@@ -2417,10 +2417,10 @@ inherits@2, inherits@^2.0.3:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-initials@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/initials/-/initials-3.1.0.tgz#ea8b93a4e2b67944db894e83dad383890da1924b"
-  integrity sha512-kWcyG5epBl4Wxvz49eW8dZAYgexQKI9qu2WP0XogWCu9nzigV7DEKhrkrKzGjYoynguxpEyo22ZCBB+NgHWiGQ==
+initials@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/initials/-/initials-3.1.1.tgz#a63395b2c46bc56207b4b964a6eb185dbd8458e6"
+  integrity sha512-imRkwIpCUer+w9NB41dTENhJrTQTGOJthRa3URF0O9+L7MOMBPmN8njwkiX4u8YnzxbjEp4Is0ohiW6NSA8ZCw==
 
 invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
