@@ -23,6 +23,8 @@ or
 
 `npm install svelte-avatar`
 
+<em>Note: to use this library in sapper, install as devDependency. See the [link](https://github.com/sveltejs/sapper-template#using-external-components).</em>
+
 ## Usage
 
 ![example](./assets/example.png)
