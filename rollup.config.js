@@ -1,6 +1,6 @@
 import svelte from 'rollup-plugin-svelte';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
@@ -18,15 +18,16 @@ export default [
     },
     plugins: [
       svelte({
-        dev: !production,
-        css: (css) => {
-          css.write('public/build/bundle.css');
-        },
+        compilerOptions: {
+          dev: !production,
+          css: (css) => {
+            css.write('public/build/bundle.css');
+          },
+        }, 
+        emitCss: false,
       }),
-      resolve({
+      nodeResolve({
         browser: true,
-        dedupe: (importee) =>
-          importee === 'svelte' || importee.startsWith('svelte/'),
       }),
       commonjs(),
       !production && serve(),
@@ -40,14 +41,13 @@ export default [
   {
     input: 'src/Avatar.svelte',
     output: { file: pkg.main, format: 'umd', name: 'Avatar' },
-    plugins: [svelte(), resolve(), commonjs()],
+    plugins: [svelte({ emitCss: false }), nodeResolve(), commonjs()],
   },
   {
     input: 'src/Avatar.svelte',
     output: { file: pkg.module, format: 'es' },
-    external: ['svelte/internal'],
-    plugins: [svelte(), commonjs()],
-    external: ['initials'],
+    external: ['svelte/internal', 'initials'],
+    plugins: [svelte({ emitCss: false }), commonjs()],
   },
 ];
 
