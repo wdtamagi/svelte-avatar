@@ -15,6 +15,7 @@
   "files": [
     "dist",
     "src/Avatar.svelte",
+    "src/utils.js",
     "README.md"
   ],
   "svelte": "src/Avatar.svelte",
