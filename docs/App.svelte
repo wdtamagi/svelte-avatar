@@ -1,5 +1,5 @@
 <script>
-  import { github } from 'svelte-highlight/styles';
+  import github from 'svelte-highlight/src/styles/github';
 
   import NameAvatar from './examples/NameAvatar.svelte';
   import ImageAvatar from './examples/ImageAvatar.svelte';
@@ -11,20 +11,6 @@
   import Square from './examples/Square.svelte';
   import RandomBgColor from './examples/RandomBgColor.svelte';
 </script>
-
-<style>
-  main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-
-  .exampleWrapper {
-    padding: 2rem;
-  }
-</style>
 
 <svelte:head>
   {@html github}
@@ -43,3 +29,17 @@
     <RandomBgColor />
   </div>
 </main>
+
+<style>
+  main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .exampleWrapper {
+    padding: 2rem;
+  }
+</style>
