@@ -71,7 +71,7 @@
   }
 </style>
 
-<div
+<div on:click
   aria-label={name}
   class="wrapper"
   style="{style}--borderRadius:{square ? 0 : borderRadius}; --size:{size}; --bgColor:{background};
