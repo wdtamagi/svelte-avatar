@@ -1,6 +1,5 @@
 <script>
-  import i from 'initials';
-  import {getRandomColor} from './utils.js';
+  import { getRandomColor, getInitials } from './utils.js';
 
   export let style = '';
   export let name = 'Avatar';
@@ -15,12 +14,35 @@
 
   const background = randomBgColor ? getRandomColor() : bgColor;
 
-  const abbr = initials || i(name);
+  const abbr = initials || getInitials(name);
   const abbrLength = abbr.length;
 
   let imageFail = false;
   let imageLoading = true;
 </script>
+
+<div
+  aria-label={name}
+  class="wrapper"
+  style="{style}--borderRadius:{square
+    ? 0
+    : borderRadius}; --size:{size}; --bgColor:{background};
+  --src:{src}; --textColor:{textColor}; --abbrLength:{abbrLength}"
+>
+  {#if src && !imageFail}
+    <div class={imageLoading ? 'imageLoading' : ''}>
+      <img
+        alt=""
+        class={`innerImage`}
+        {src}
+        on:error={() => (imageFail = true)}
+        on:load={() => (imageLoading = false)}
+      />
+    </div>
+  {:else}
+    <div class="innerInitials">{abbr}</div>
+  {/if}
+</div>
 
 <style>
   .wrapper {
@@ -70,22 +92,3 @@
     }
   }
 </style>
-
-<div
-  aria-label={name}
-  class="wrapper"
-  style="{style}--borderRadius:{square ? 0 : borderRadius}; --size:{size}; --bgColor:{background};
-  --src:{src}; --textColor:{textColor}; --abbrLength:{abbrLength}">
-  {#if src && !imageFail}
-    <div class={imageLoading ? 'imageLoading' : ''}>
-      <img
-        alt=""
-        class={`innerImage`}
-        {src}
-        on:error={() => (imageFail = true)}
-        on:load={() => (imageLoading = false)} />
-    </div>
-  {:else}
-    <div class="innerInitials">{abbr}</div>
-  {/if}
-</div>
