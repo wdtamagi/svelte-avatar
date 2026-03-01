@@ -17,13 +17,9 @@ This component display an avatar image with fallback to the name initials. This 
 
 ## Installation
 
-`yarn add svelte-avatar`
-
-or
-
 `npm install svelte-avatar`
 
-<em>Note: to use this library in sapper, install as devDependency. See the [link](https://github.com/sveltejs/sapper-template#using-external-components).</em>
+> **Note:** Svelte 5 is required as a peer dependency.
 
 ## Usage
 
@@ -31,9 +27,9 @@ or
 
 with image:
 
-```js
+```svelte
 <script>
-  import Avatar from "svelte-avatar";
+  import { Avatar } from "svelte-avatar";
 </script>
 
 <Avatar name="John Walker" src="https://avatars0.githubusercontent.com/u/6810985?s=460&u=a2a24f33ad8d17377cef8163f596a7fbd1501cd4&v=4" />
@@ -41,9 +37,9 @@ with image:
 
 with name:
 
-```js
+```svelte
 <script>
-  import Avatar from "svelte-avatar";
+  import { Avatar } from "svelte-avatar";
 </script>
 
 <Avatar name="John Walker" />
@@ -113,26 +109,24 @@ with name:
 
 ```bash
 # install dependencies
-yarn
-# or
-npm i
+npm install
 
-# serve gh pages with hot reload at localhost:5000
-yarn dev
-# or
+# start docs dev server at localhost:5173
 npm run dev
 
-# build
-yarn build
-# or
+# build docs site
 npm run build
+
+# build the library (outputs to dist/)
+npm run package
+
+# preview the built docs site
+npm run preview
 ```
 
 ## Test
 
 ```bash
-yarn test
-# or
 npm test
 ```
 
