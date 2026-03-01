@@ -18,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Breaking:** Svelte 5 is now required as a peer dependency (`svelte >= 5`).
 - **Breaking:** Migrated component to Svelte 5 syntax (uses `onerror`/`onload` event handler attributes instead of `on:` directives).
+- Migrated codebase from JavaScript to TypeScript (`utils.ts`, `index.ts`, `Avatar.svelte` with `lang="ts"`).
+- Replaced `jsconfig.json` with `tsconfig.json` with strict mode enabled.
 - Switched bundler from Rollup to Vite.
 - Replaced `svelte-kit` package tooling with `@sveltejs/package`.
 - Updated all dev dependencies to their latest versions.

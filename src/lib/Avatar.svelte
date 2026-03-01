@@ -1,5 +1,5 @@
-<script>
-  import { getRandomColor, getInitials } from './utils.js';
+<script lang="ts">
+  import { getRandomColor, getInitials } from './utils';
 
   let {
     style = '',
