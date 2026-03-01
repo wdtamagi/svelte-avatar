@@ -2,7 +2,7 @@
   import { Highlight } from 'svelte-highlight';
   import { javascript } from 'svelte-highlight/languages';
 
-  import Avatar from '../../src/Avatar.svelte';
+  import Avatar from '../../src/lib/Avatar.svelte';
 
   $: code = `<Avatar name="John Walker" />`;
 </script>
