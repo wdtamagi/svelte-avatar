@@ -11,13 +11,13 @@ A simple avatar component for Svelte.
 <br />
 <br />
 
-[![GitHub release](https://img.shields.io/github/v/release/wdtamagi/svelte-avatar)](https://github.com/wdtamagi/svelte-avatar/packages) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![npm version](https://badge.fury.io/js/svelte-avatar.svg)](https://www.npmjs.com/package/svelte-avatar) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 This component display an avatar image with fallback to the name initials. This component is inspired from [react-user-avatar](https://github.com/wbinnssmith/react-user-avatar) and [vue-avatar](https://github.com/eliep/vue-avatar).
 
 ## Installation
 
-`npm install @wdtamagi/svelte-avatar`
+`npm install svelte-avatar`
 
 > **Note:** Svelte 5 is required as a peer dependency.
 
@@ -29,7 +29,7 @@ with image:
 
 ```svelte
 <script>
-  import { Avatar } from "@wdtamagi/svelte-avatar";
+  import { Avatar } from "svelte-avatar";
 </script>
 
 <Avatar name="John Walker" src="https://avatars0.githubusercontent.com/u/6810985?s=460&u=a2a24f33ad8d17377cef8163f596a7fbd1501cd4&v=4" />
@@ -39,7 +39,7 @@ with name:
 
 ```svelte
 <script>
-  import { Avatar } from "@wdtamagi/svelte-avatar";
+  import { Avatar } from "svelte-avatar";
 </script>
 
 <Avatar name="John Walker" />
@@ -129,6 +129,12 @@ npm run preview
 ```bash
 npm test
 ```
+
+## NPM Statistics
+
+Download stats for this NPM package
+
+[![NPM](https://nodei.co/npm/svelte-avatar.png)](https://nodei.co/npm/svelte-avatar/)
 
 ## License
 

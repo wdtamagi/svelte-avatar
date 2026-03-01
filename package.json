@@ -1,5 +1,5 @@
 {
-  "name": "@wdtamagi/svelte-avatar",
+  "name": "svelte-avatar",
   "homepage": "https://svelte-avatar.netlify.app/",
   "keywords": [
     "svelte",
@@ -21,9 +21,6 @@
   "author": "Willian Dias Tamagi",
   "license": "MIT",
   "private": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "type": "module",
   "main": "./dist/index.js",
   "svelte": "./dist/index.js",
