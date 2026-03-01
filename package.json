@@ -30,6 +30,9 @@
     "preview": "vite preview",
     "test": "vitest"
   },
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "peerDependencies": {
     "svelte": ">=5"
   },
