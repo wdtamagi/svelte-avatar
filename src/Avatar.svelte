@@ -35,8 +35,8 @@
         alt=""
         class={`innerImage`}
         {src}
-        on:error={() => (imageFail = true)}
-        on:load={() => (imageLoading = false)}
+        onerror={() => (imageFail = true)}
+        onload={() => (imageLoading = false)}
       />
     </div>
   {:else}

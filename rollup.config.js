@@ -2,8 +2,10 @@ import svelte from 'rollup-plugin-svelte';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
-import { terser } from 'rollup-plugin-terser';
-import pkg from './package.json';
+import terser from '@rollup/plugin-terser';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const pkg = require('./package.json');
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -28,6 +30,7 @@ export default [
       }),
       nodeResolve({
         browser: true,
+        exportConditions: ['svelte'],
       }),
       commonjs(),
       !production && serve(),
@@ -41,13 +44,13 @@ export default [
   {
     input: 'src/Avatar.svelte',
     output: { file: pkg.main, format: 'umd', name: 'Avatar' },
-    plugins: [svelte({ emitCss: false }), nodeResolve(), commonjs()],
+    plugins: [svelte({ emitCss: false }), nodeResolve({ exportConditions: ['svelte'] }), commonjs()],
   },
   {
     input: 'src/Avatar.svelte',
     output: { file: pkg.module, format: 'es' },
-    external: ['svelte/internal', 'initials'],
-    plugins: [svelte({ emitCss: false }), commonjs()],
+    external: (id) => id.startsWith('svelte'),
+    plugins: [svelte({ emitCss: false }), nodeResolve({ exportConditions: ['svelte'] }), commonjs()],
   },
 ];
 
