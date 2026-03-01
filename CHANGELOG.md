@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Named export: `import { Avatar } from "svelte-avatar"`.
 - Netlify configuration (`netlify.toml`) for deploy previews.
 - Unit tests with Vitest and `@testing-library/svelte`.
+- GitHub Actions workflow (`.github/workflows/publish.yml`) to automatically publish the package to NPM with provenance attestation on every `v*` tag push.
 
 ### Changed
 
