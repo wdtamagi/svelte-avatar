@@ -1,24 +1,27 @@
 <script>
   import { getRandomColor, getInitials } from './utils.js';
 
-  export let style = '';
-  export let name = 'Avatar';
-  export let initials;
-  export let src;
-  export let bgColor = 'lightGrey';
-  export let textColor = 'white';
-  export let size = '50px';
-  export let borderRadius = '50%';
-  export let square = false;
-  export let randomBgColor = false;
+  let {
+    style = '',
+    name = 'Avatar',
+    initials = undefined,
+    src = undefined,
+    bgColor = 'lightGrey',
+    textColor = 'white',
+    size = '50px',
+    borderRadius = '50%',
+    square = false,
+    randomBgColor = false,
+  } = $props();
 
-  const background = randomBgColor ? getRandomColor() : bgColor;
+  const randomColor = randomBgColor ? getRandomColor() : undefined;
+  const background = $derived(randomColor ?? bgColor);
 
-  const abbr = initials || getInitials(name);
-  const abbrLength = abbr.length;
+  const abbr = $derived(initials || getInitials(name));
+  const abbrLength = $derived(abbr.length);
 
-  let imageFail = false;
-  let imageLoading = true;
+  let imageFail = $state(false);
+  let imageLoading = $state(true);
 </script>
 
 <div
