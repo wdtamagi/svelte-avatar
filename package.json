@@ -2,23 +2,36 @@
   "name": "svelte-avatar",
   "homepage": "https://svelte-avatar.netlify.app/",
   "keywords": [
-    "svelte"
+    "svelte",
+    "avatar",
+    "component",
+    "image",
+    "initials",
+    "profile"
   ],
   "version": "2.0.0",
   "description": "An avatar component for Svelte",
   "repository": "git@github.com:wdtamagi/svelte-avatar.git",
+  "bugs": {
+    "url": "https://github.com/wdtamagi/svelte-avatar/issues"
+  },
   "author": "Willian Dias Tamagi",
   "license": "MIT",
   "private": false,
   "type": "module",
   "main": "./dist/index.js",
   "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js",
       "default": "./dist/index.js"
     }
   },
+  "sideEffects": [
+    "**/*.svelte"
+  ],
   "files": [
     "dist"
   ],
@@ -27,6 +40,7 @@
     "build": "vite build",
     "package": "svelte-package",
     "package:watch": "svelte-package --watch",
+    "prepublishOnly": "npm run package",
     "preview": "vite preview",
     "test": "vitest"
   },

@@ -14,6 +14,6 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['@testing-library/jest-dom/vitest'],
-    include: ['src/**/*.test.js'],
+    include: ['src/**/*.test.ts'],
   },
 });
