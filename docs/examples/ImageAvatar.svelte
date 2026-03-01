@@ -2,7 +2,7 @@
   import { Highlight } from 'svelte-highlight';
   import { javascript } from 'svelte-highlight/languages';
 
-  import Avatar from '../../src/Avatar.svelte';
+  import Avatar from '../../src/lib/Avatar.svelte';
 
   $: code = `<Avatar
   src="https://avatars0.githubusercontent.com/u/6810985?s=460&u=a2a24f33ad8d17377cef8163f596a7fbd1501cd4&v=4" />`;
