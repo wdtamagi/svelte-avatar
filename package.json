@@ -11,7 +11,10 @@
   ],
   "version": "2.0.0",
   "description": "An avatar component for Svelte",
-  "repository": "git@github.com:wdtamagi/svelte-avatar.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdtamagi/svelte-avatar.git"
+  },
   "bugs": {
     "url": "https://github.com/wdtamagi/svelte-avatar/issues"
   },
