@@ -34,6 +34,10 @@ jobs:
         run: npm run package
 
       - name: Publish to NPM
+        # NPM_TOKEN must be a Granular Access Token with:
+        #   - Scope: the "svelte-avatar" package (or all packages)
+        #   - Permission: Read and write
+        # Classic "Automation" tokens also work (bypasses 2FA for CI/CD).
         run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
